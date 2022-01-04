@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+$primary-color: #5fbaa7;
+
+* {
+  box-sizing: border-box;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+body {
+  background-color: #e9e9e9;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 20px;
+}
+
+img {
+  width: 50vw;
+  min-width: 200px;
+  max-width: 250px;
+}
+
+h2 {
+  color: $primary-color;
+  text-align: center;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .money {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    select {
+      appearance: none; //取消外部樣式
+      padding: 5px 30px 5px 15px;
+      border-radius: 5px;
+      font-size: 16px;
+      outline: none;
+      user-select: none;
+      border: 1px solid silver;
+      background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%20000002%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E');
+      background-position: right 15px top 50%, 0, 0;
+      background-size: 12px auto, 100%;
+      background-repeat: no-repeat;
+    }
+    input {
+      height: 29px;
+      margin-left: 2vw;
+      padding-left: 5px;
+      font-size: 16px;
+      outline: none;
+      border: 1px solid darkgrey;
+    }
+  }
+  button {
+    color: white;
+    background-color: $primary-color;
+    padding: 5px 12px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin: 30px 0 0 0;
+    font-size: 16px;
+  }
+}
+
+.swap-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h5 {
+    margin: 10px 0 30px 0;
+  }
+}
+
+//取消輸入框的箭頭
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}

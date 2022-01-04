@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Money Exchanger</title>
+  </head>
+  <body>
+    <img src="./money.png" alt="" />
+    <h2>Exchange Rate Calculator</h2>
+    <p>Choose the currency and the amounts to get the exchange rate</p>
+    <div class="container">
+      <div class="money">
+        <select id="money-one">
+          <option value="AUD">AUD</option>
+          <option value="EUR">EUR</option>
+          <option value="JPY">JPY</option>
+          <option value="NZD">NZD</option>
+          <option value="HKD">HKD</option>
+          <option value="THB">THB</option>
+          <option value="TWD" selected>TWD</option>
+          <option value="USD">USD</option>
+          <option value="ZAR">ZAR</option>
+        </select>
+        <input type="number" id="amount-one" value="1" />
+      </div>
+      <div class="swap-box">
+        <button class="btn" id="swap">Swap</button>
+        <h5 class="rate" id="rate"></h5>
+      </div>
+      <div class="money">
+        <select id="money-two">
+          <option value="AUD">AUD</option>
+          <option value="EUR">EUR</option>
+          <option value="JPY">JPY</option>
+          <option value="NZD">NZD</option>
+          <option value="HKD">HKD</option>
+          <option value="THB">THB</option>
+          <option value="TWD">TWD</option>
+          <option value="USD" selected>USD</option>
+          <option value="ZAR">ZAR</option>
+        </select>
+        <input type="number" id="amount-two" placeholder="0" />
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
